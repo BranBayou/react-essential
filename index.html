@@ -76,4 +76,176 @@
     </ul>, 
     document.getElementById("root"))
 </script> -->
+
+
+<!-- 06 -->
+<!-- <script type="text/babel">
+  function Header () {
+    return (
+      <header>
+        <h1>Eve's Kitchen</h1>
+      </header>
+    );
+  }
+
+  function Main () {
+    return (
+      <p>We serve the most delicious food around</p>
+    );
+  }
+
+  function App () {
+    return (
+      <div class="">
+        <Header />
+        <Main />
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById("root"))
+</script> -->
+
+<!-- 07 -->
+<!-- <script type="text/babel">
+  function Header (props) {
+    return (
+      <header>
+        <h1>{props.name}'s Kitchen</h1>
+      </header>
+    );
+  }
+
+  function Main (props) {
+    return (
+      <p>We serve the most {props.adjective} delicious food around</p>
+    );
+  }
+
+  function Footer (props) {
+    return (
+      <footer>
+        <p>Copyright {props.year}</p>
+      </footer>
+    );
+  }
+
+  function App () {
+    return (
+      <div class="">
+        <Header name="Berhan"/>
+        <Main adjective="amazing"/>
+        <Footer year = {new Date().getFullYear()}/>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById("root"))
+</script> -->
+
+<!-- 08 -->
+<!-- <script type="text/babel">
+  function Header (props) {
+    return (
+      <header>
+        <h1>{props.name}'s Kitchen</h1>
+      </header>
+    );
+  }
+
+  function Main (props) {
+    return (
+      <section>
+        <ul>
+          {props.dishes.map((dish) => (
+            <li>{dish}</li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
+
+  function Footer (props) {
+    return (
+      <footer>
+        <p>Copyright {props.year}</p>
+      </footer>
+    );
+  }
+
+  const dishes = [
+    "Balck Bean Soup",
+    "Macaroni and Cheese",
+    "Salmon and Potatoes"
+  ];
+
+  function App () {
+    return (
+      <div class="">
+        <Header name="Berhan"/>
+        <Main adjective="amazing" dishes = {dishes}/>
+        <Footer year = {new Date().getFullYear()}/>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById("root"))
+</script> -->
+
+<!-- 09 -->
+<script type="text/babel">
+  function Header (props) {
+    return (
+      <header>
+        <h1>{props.name}'s Kitchen</h1>
+      </header>
+    );
+  }
+
+  function Main (props) {
+    return (
+      <section>
+        <ul>
+          {props.dishes.map((dish) => (
+            <li>{dish}</li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
+
+  function Footer (props) {
+    return (
+      <footer>
+        <p>Copyright {props.year}</p>
+      </footer>
+    );
+  }
+
+  const dishes = [
+    "Balck Bean Soup",
+    "Macaroni and Cheese",
+    "Salmon and Potatoes"
+  ];
+
+  function App () {
+    return (
+      <div class="">
+        <Header name="Berhan"/>
+        <Main adjective="amazing" dishes = {dishes}/>
+        <Footer year = {new Date().getFullYear()}/>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById("root"))
+</script>
 </html>
