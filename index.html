@@ -275,7 +275,7 @@
 
 <!-- 10 -->
 
-<script type="text/babel">
+<!-- <script type="text/babel">
   function Header (props) {
     return (
       <header>
@@ -323,6 +323,28 @@
         <Header name="Berhan"/>
         <Main adjective="amazing" dishes = {dishObj}/>
         <Footer year = {new Date().getFullYear()}/>
+      </React.Fragment>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById("root")) -->
+
+    <!-- 11 useState Hook -->
+
+    <script type="text/babel">
+  
+
+  function App () {
+    const [emo, setEmo] = React.useState('Happy');
+    return (
+      <React.Fragment>
+        <div>
+          <h1>Hello, I'm {emo}</h1>
+          <button onClick={() => {setEmo('Excited')}}>Excited</button>
+          <button onClick={() => {setEmo('Excited')}}>Blessed</button>
+        </div>
       </React.Fragment>
     );
   }
