@@ -333,7 +333,7 @@
 
     <!-- 11 useState Hook -->
 
-    <script type="text/babel">
+    <!-- <script type="text/babel">
   
 
   function App () {
@@ -342,8 +342,8 @@
       <React.Fragment>
         <div>
           <h1>Hello, I'm {emo}</h1>
-          <button onClick={() => {setEmo('Excited')}}>Excited</button>
-          <button onClick={() => {setEmo('Excited')}}>Blessed</button>
+          <button onClick={() => setEmo('Excited')}>Excited</button>
+          <button onClick={() => setEmo('Excited')}>Blessed</button>
         </div>
       </React.Fragment>
     );
@@ -351,6 +351,33 @@
   
   ReactDOM.render(
     <App />,
-    document.getElementById("root"))
+    document.getElementById("root")) -->
+
+    <!-- Better useState Hook useage -->
+
+    <script type="text/babel">
+  
+
+      function App () {
+        const [emo, setEmo] = React.useState('Happy');
+
+        const handleExcited = () => setEmo('Excited');
+        const handeBlessed = () => setEmo('Blessed');
+        const handeProsper = () => setEmo('Prosper');
+        return (
+          <React.Fragment>
+            <div>
+              <h1>Hello, I'm {emo}</h1>
+              <button onClick={handleExcited}>Excited</button>
+              <button onClick={handeBlessed}>Blessed</button>
+              <button onClick={handeProsper}>Prosper</button>
+            </div>
+          </React.Fragment>
+        );
+      }
+      
+      ReactDOM.render(
+        <App />,
+        document.getElementById("root"))
 </script>
 </html>
