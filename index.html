@@ -383,29 +383,29 @@
 <!-- useEffect Hook -->
 <script type="text/babel">
   
-  function App () {
-    const [emo, setEmo] = React.useState('Happy');
-    React.useEffect(() => {
-      console.log(`It's ${emo} right now`);
-    }), [emo];
+  // function App () {
+  //   const [emo, setEmo] = React.useState('Happy');
+  //   React.useEffect(() => {
+  //     console.log(`It's ${emo} right now`);
+  //   }), [emo];
 
-    const handleExcited = () => setEmo('Excited');
-    const handeBlessed = () => setEmo('Blessed');
-    const handeProsper = () => setEmo('Prosper');
-    return (
-      <React.Fragment>
-        <div>
-          <h1>Hello, I'm {emo}</h1>
-          <button onClick={handleExcited}>Excited</button>
-          <button onClick={handeBlessed}>Blessed</button>
-          <button onClick={handeProsper}>Prosper</button>
-        </div>
-      </React.Fragment>
-    );
-  }
+  //   const handleExcited = () => setEmo('Excited');
+  //   const handeBlessed = () => setEmo('Blessed');
+  //   const handeProsper = () => setEmo('Prosper');
+  //   return (
+  //     <React.Fragment>
+  //       <div>
+  //         <h1>Hello, I'm {emo}</h1>
+  //         <button onClick={handleExcited}>Excited</button>
+  //         <button onClick={handeBlessed}>Blessed</button>
+  //         <button onClick={handeProsper}>Prosper</button>
+  //       </div>
+  //     </React.Fragment>
+  //   );
+  // }
   
-  ReactDOM.render(
-    <App />,
-    document.getElementById("root"))
+  // ReactDOM.render(
+  //   <App />,
+  //   document.getElementById("root"))
 </script>
 </html>
