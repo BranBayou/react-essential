@@ -1,12 +1,12 @@
 import React from 'react';
 
-const List = (props) => {
+const List = ({ bs }) => {
   return (
-      <ul>
-        {props.bis.map(b => (
-          <li key={b}>{b}</li>
-        ))}
-      </ul>
+    <ul>
+      {bs.map(b => (
+        <li key={b}>{b}</li>
+      ))}
+    </ul>
   );
 }
 
